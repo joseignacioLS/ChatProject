@@ -1,0 +1,22 @@
+{
+  "_id": "625fb6bc8157070166c75386",
+  "users": ["625fb5e98157070166c752a2", "625fb5ac5712fd7979719bf4"],
+  "messages": [
+    { "user": "625fb5e98157070166c752a2", "message": "Hola!", "read": true },
+    {
+      "user": "625fb5ac5712fd7979719bf4",
+      "message": "Que tal?",
+      "read": false
+    },
+    {
+      "user": "625fb5e98157070166c752a2",
+      "message": "Todo bien y tu?",
+      "read": true
+    },
+    { "user": "625fb5ac5712fd7979719bf4", "message": "Genial!", "read": false },
+    { "user": "625fb5e98157070166c752a2", "message": "Me alegro", "read": true }
+  ],
+  "createdAt": "2022-04-20T07:31:08.519Z",
+  "updatedAt": "2022-04-20T07:32:07.045Z",
+  "__v": "0"
+}
