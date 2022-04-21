@@ -5,16 +5,17 @@ import { conversationRoutes } from "./routes/conversation.routes.mjs"
 import { userRoutes } from "./routes/user.routes.mjs"
 import passport from "passport"
 import "./authentication/passport.mjs"
+import "dotenv/config"
 
-const PORT = 3000
+const PORT = process.env.PORT
 
 const server = express()
 const router = express.Router()
 router.use(cors())
-server.use(passport.initialize())
 
 server.use(express.json())
 server.use(express.urlencoded({ extended: true }))
+server.use(passport.initialize())
 
 server.use("/conversation", conversationRoutes)
 server.use("/user", userRoutes)
@@ -32,5 +33,5 @@ server.use((err, req, res, next) => {
 server.use(router)
 
 server.listen(process.env.PORT || PORT, () => {
-  console.log("server running")
+  console.log(`server running on port ${PORT}`)
 })

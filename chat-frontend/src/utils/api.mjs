@@ -1,4 +1,5 @@
-const serverUrl = "http://localhost:3000"
+
+const serverUrl = process.env.REACT_APP_serverURL
 
 const checkUser = async (user, password) => {
   try {

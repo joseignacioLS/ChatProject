@@ -1,7 +1,7 @@
 import { mongoose } from "mongoose"
+import "dotenv/config"
 
-const databaseURL =
-  ""
+const databaseURL = process.env.databaseURL
 
 const connection = mongoose.connect(databaseURL, {
   useNewUrlParser: true,
